@@ -1,0 +1,19 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=3704
+
+This script allows the user to switch to the next speaker by pressing <Tab> during transcription in insert mode. E.g.
+
+    INTERVIEWER: Blah blah blah?
+
+User presses <Tab> and...
+
+    INTERVIEWER: Blah blah blah?
+
+    INTERVIEWEE1:
+
+To change the names of the people, :let tP1 ,:let tP2 etc.. Alternatively, change the default names by editing the appropriate variables in tra.vim.
+
+<Tab> behaviour has changed slightly (as of v0.2). Basically, if there's no speech in the previous line, it gets replaced by the next speaker on the list.
+
+Multiple INTERVIEWEE's are supported as of v0.2. Simply press <Tab> multiple times and the current INTERVIEWEE will change up to (maxPersons - 1). To change the number of INTERVIEWEEs, simply :let maxPersons = people in interview. Currently, and INTERVIEWER and 4 INTERVIEWEEs are supported.
+
+
